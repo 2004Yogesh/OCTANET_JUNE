@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}    
+.header{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34)), url("https://bornrealist.com/wp-content/uploads/2017/09/business-discussion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    color:#fff;
+    width: 100%;
+    display: flex;
+    padding: 10px 60px;
+    justify-content: space-between;
+    align-items: center;   
+}
+.navbar.logo{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-menu ul li{
+    list-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff;
+}
+.nav-menu ul li:hover{
+    background-color: #17bd86;
+    transition: 0.5s ease;
+}
+.toggle-btn{
+    position:absolute;
+    top:28px;
+    right:60px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22px;
+    width: 31px;
+}
+.toggle-btn .bar{
+    height:4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;   
+}
+.content-section{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ceccd0;
+}
+.content-section h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.content-section p{
+    color: #aaa lalal;
+    font-size: 19px;
+    margin-top: 10px;
+    line-height: 1.5;
+
+}
+.content-section .button{
+    margin-top: 25px;
+
+}
+.content-section .button a{
+    text-decoration: none;
+    font-size:18px;
+    color:#fff;
+    display:inline-block;
+    background-color: #00675d;
+    border-radius: 5px;
+    padding:13px 23px ;
+    letter-spacing: 1.5px;
+
+}
+.content-section .button a:hover{
+    background-color: #9dd153;
+    transition: 0.5s ease;
+
+}
+@media screen and (max-width:768px){
+    .toggle-btn{
+        display: flex;
+        z-index: 2;
+    }
+    .nav-menu ul{
+        width: 100%;
+        background-color: #508089;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        position:absolute;
+        text-align: center;
+        justify-content: center;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .nav-menu{
+        display: none;
+        width: 100;
+    }
+    .nav-menu ul li a{
+        margin: 10px 0px;
+
+    }
+    .nav-menu ul li a{
+        font-size: 19px;
+    }
+    .navbar.logo{
+     font-size:19px;
+    }
+    .content-section hl{
+        font-size: 40px;
+    }
+    content-section p{
+        font-size: 19px;
+    }
+    content-selection .button a{
+        padding: 9px 15px;
+        font-size: 17px;
+    }
+    .nav-menu.active{
+        display: flex;
+    }  
+}
